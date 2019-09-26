@@ -24,7 +24,7 @@
 
 #if canImport(Combine)
 
-import Combine
+/*import Combine
 import Foundation
 
 @available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
@@ -109,6 +109,6 @@ internal class SwiftyUserDefaultsPublisher<Output>: Publisher {
         let subscription = Subscription(subscriber: AnySubscriber(subscriber), callback: callback)
         subscriber.receive(subscription: subscription)
     }
-}
+}*/
 
 #endif

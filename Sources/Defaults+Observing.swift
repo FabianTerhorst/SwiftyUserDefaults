@@ -34,13 +34,13 @@ public extension DefaultsAdapter {
         return defaults.observe(key, options: options, handler: handler)
     }
 
-    func observe<T: DefaultsSerializable>(_ keyPath: KeyPath<KeyStore, DefaultsKey<T>>,
+    /*func observe<T: DefaultsSerializable>(_ keyPath: KeyPath<KeyStore, DefaultsKey<T>>,
                                           options: NSKeyValueObservingOptions = [.old, .new],
                                           handler: @escaping (DefaultsObserver<T>.Update) -> Void) -> DefaultsDisposable {
         return defaults.observe(keyStore[keyPath: keyPath],
                                 options: options,
                                 handler: handler)
-    }
+    }*/
 }
 
 public extension UserDefaults {

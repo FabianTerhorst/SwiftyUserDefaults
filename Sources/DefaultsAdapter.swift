@@ -60,17 +60,17 @@ public struct DefaultsAdapter<KeyStore: DefaultsKeyStore>: DefaultsType {
         return defaults.hasKey(key)
     }
 
-    public func hasKey<T: DefaultsSerializable>(_ keyPath: KeyPath<KeyStore, DefaultsKey<T>>) -> Bool {
+    /*public func hasKey<T: DefaultsSerializable>(_ keyPath: KeyPath<KeyStore, DefaultsKey<T>>) -> Bool {
         return defaults.hasKey(keyStore[keyPath: keyPath])
-    }
+    }*/
 
     public func remove<T: DefaultsSerializable>(_ key: DefaultsKey<T>) {
         defaults.remove(key)
     }
 
-    public func remove<T: DefaultsSerializable>(_ keyPath: KeyPath<KeyStore, DefaultsKey<T>>) {
+    /*public func remove<T: DefaultsSerializable>(_ keyPath: KeyPath<KeyStore, DefaultsKey<T>>) {
         defaults.remove(keyStore[keyPath: keyPath])
-    }
+    }*/
 
     public func removeAll() {
         defaults.removeAll()
